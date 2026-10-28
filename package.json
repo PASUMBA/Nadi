@@ -1,0 +1,13 @@
+{
+  "name": "nadi-rppg",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "test:e2e": "node tests/e2e.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.52.0"
+  }
+}

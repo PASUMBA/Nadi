@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10151d">
+    <meta name="description" content="Measure an estimated heart rate from your face using your camera.">
+    <title>Nadi – Heart Rate from Face</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main class="app">
+      <header class="heading">
+        <p class="eyebrow">NADI</p>
+        <h1>Heart rate from face</h1>
+      </header>
+
+      <section class="reading" aria-live="polite" aria-atomic="true">
+        <output id="bpm" class="bpm" aria-label="Heart rate">--</output>
+        <span class="unit">BPM</span>
+        <p id="status" class="status">Camera is off</p>
+      </section>
+
+      <button id="toggle" class="toggle" type="button">Start</button>
+
+      <section class="camera" aria-label="Camera preview">
+        <video id="video" autoplay muted playsinline></video>
+        <canvas id="overlay" aria-hidden="true"></canvas>
+        <div id="camera-message" class="camera-message">Your camera preview appears here</div>
+      </section>
+
+      <p class="tip">Sit still, 40–60 cm from camera, face the light, hold 15 s</p>
+      <p class="privacy">Runs fully on your device; no video is uploaded.</p>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
