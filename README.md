@@ -1,4 +1,6 @@
-# Nadi – Heart Rate from Face
+# Nadi
+
+## Heart Rate from Face
 
 Nadi estimates a heart rate from small colour changes in your face. It runs in
 Chrome and processes the camera image on your device.
